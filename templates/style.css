@@ -1,0 +1,40 @@
+*, 
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-style: normal;
+    font-weight: 300;
+    font-family: 'Roboto',Arial,Helvetica,sans-serif;
+    cursor: auto;
+    line-height: 1.444;
+    word-wrap: break-word;
+    color: #202124;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    background-color: #e8eaed;
+    border-collapse: collapse;
+    padding: 1rem 2rem;
+}
+
+td {
+    border-bottom: 1px solid #202124;
+}
+
+tr td:last-child{
+    text-align: center;
+}
+
+tbody > tr {
+    border-bottom: 1px solid black;
+    
+}
