@@ -1,0 +1,1 @@
+web: gunicorn hng_leaderboard.wsgi --log-file -

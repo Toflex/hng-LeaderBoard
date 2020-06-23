@@ -17,7 +17,7 @@ SECRET_KEY = '#x%w=46tqjj-e^qjnsk-jrf1=n4q_lqgq2lyj&9khxl#4x$xyk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://hng-hustle-leaderboard.herokuapp.com']
 
 
 # Application definition
@@ -34,6 +34,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
