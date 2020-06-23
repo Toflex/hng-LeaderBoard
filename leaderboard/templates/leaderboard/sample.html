@@ -2,6 +2,9 @@
 {% block content %}
 
 <div class="container">
+<a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+  Share on Facebook
+</a>
     {% comment %} <div class="table-data-container"> {% endcomment %}
         <table class="table table-bordered table-striped">
             <thead>
@@ -18,10 +21,10 @@
                 {% if forloop.counter < 4 %}
                 <tr style="background-color:yellow">
                     <th>{{forloop.counter}}</th>
-                    <td>{{record.fullname}}</td>
+                    <td><a href="{% url 'leader_detail' record.id%}">{{record.fullname}}</a></td>
                     <td>{{record.username}}</td>
                     <td>{{record.email}}</td>
-                    <td>{{record.point}}</td>
+                    <td>{{record.points}}</td>
                 </tr>
                 {% else %}
                 <tr>
@@ -29,7 +32,7 @@
                     <td>{{record.fullname}}</td>
                     <td>{{record.username}}</td>
                     <td>{{record.email}}</td>
-                    <td>{{record.point}}</td>
+                    <td>{{record.points}}</td>
                 </tr>
                 {% endif %}
                 {% endfor %}

@@ -1,0 +1,15 @@
+{% extends 'leaderboard/base.html' %}
+{% block content %}
+
+<div class="container">
+<a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+  Share on Facebook
+</a>
+  
+<p>Fullname - {{user.fullname}}</p>
+<p>Email Address - {{user.email}}</p>
+<p>Username - {{user.username}}</p>
+<p>Total Point - {{user.points}}</p>
+
+</div>
+{% endblock content %}
