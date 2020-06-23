@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Learder Board</title>
+{% extends 'leaderboard/base.html' %}
+{% block content %}
 
-    </head>
-    <body>
-        <h1>Hello, World</h1>
-    </body>
-</html>
+<div class="container">
+    <form method="POST" enctype="multipart/form-data" style="width: 300px;">
+    {% csrf_token %}
+    <div class="form-group">
+    {{form.file}}
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}

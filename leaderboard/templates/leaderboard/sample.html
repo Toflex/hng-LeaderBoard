@@ -1,0 +1,40 @@
+{% extends 'leaderboard/base.html' %}
+{% block content %}
+
+<div class="container">
+    {% comment %} <div class="table-data-container"> {% endcomment %}
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>S/N</th>
+                    <th class="names">FULL NAME</th>
+                    <th class="username">USERNAME</th>
+                    <th class="email">EMAIL</th>
+                    <th class="poimnnts">TOTAL POINTS</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for record in records %}
+                {% if forloop.counter < 4 %}
+                <tr style="background-color:yellow">
+                    <th>{{forloop.counter}}</th>
+                    <td>{{record.fullname}}</td>
+                    <td>{{record.username}}</td>
+                    <td>{{record.email}}</td>
+                    <td>{{record.point}}</td>
+                </tr>
+                {% else %}
+                <tr>
+                    <th>{{forloop.counter}}</th>
+                    <td>{{record.fullname}}</td>
+                    <td>{{record.username}}</td>
+                    <td>{{record.email}}</td>
+                    <td>{{record.point}}</td>
+                </tr>
+                {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+    {% comment %} </div> {% endcomment %}
+</div>
+{% endblock content %}
