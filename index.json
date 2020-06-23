@@ -1,0 +1,29 @@
+{
+    "scores":
+    [{
+        "fullname": "Adegunwa Toluwalope",
+        "username": "@Adegunwa",
+        "email" : "Adegunwa@gmail.com"
+        ,"point": 128
+    },{
+        "fullname": "Adebayo Olamide",
+        "username": "@Olamide",
+        "email" : "Olamide@gmail.com"
+        ,"point": 322
+    },{
+        "fullname": "Peter Kelvin",
+        "username": "@Kelvin",
+        "email" : "KelvinPeter@gmail.com"
+        ,"point": 210
+    },{
+        "fullname": "Oyelade Mary",
+        "username": "@mary",
+        "email" : "OyeladeMary@gmail.com"
+        ,"point": 123
+    },{
+        "fullname": "Olusegun Obasanjo",
+        "username": "@Shegz",
+        "email" : "Olusegun@gmail.com"
+        ,"point": 184
+    }]
+}
